@@ -157,3 +157,9 @@ h1.company-name {
 		
 	}
 }
+
+.footer {
+	&--disable {
+		display: none;
+	}
+}

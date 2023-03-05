@@ -1,6 +1,9 @@
 @use "./colors";
 
 @media (min-width: 992px) {
+	h1.comapny-name {
+		font-size: 6rem;
+	}
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
 
@@ -88,5 +91,13 @@
 	}
 	.hamburger {
 		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__text {
+			font-size: 2.2rem;
+		}
 	}
 }
