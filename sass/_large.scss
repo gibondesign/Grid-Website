@@ -1,6 +1,15 @@
 @use "./colors";
-
 @media (min-width: 992px) {
+
+
+	.section-title {
+		font-size: 4.8rem;
+
+		&::before{
+			height: 4px;
+		}
+	}
+
 	h1.comapny-name {
 		font-size: 6rem;
 	}
