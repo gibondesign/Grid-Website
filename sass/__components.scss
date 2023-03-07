@@ -371,17 +371,34 @@ h1.company-name {
 			color: colors.$gold;
 			font-weight: bold;
 			cursor: pointer;
-			transition: background-color .3s, color .3s;
-		
-		&:hover {
-			color: colors.$red;
-			background-color: colors.$gold;
-		}
+			transition: background-color 0.3s, color 0.3s;
+
+			&:hover {
+				color: colors.$red;
+				background-color: colors.$gold;
+			}
 		}
 	}
 }
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
+	img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+
+		&:nth-child(n + 5) {
+			display: none;
+		}
+	}
+}
 .footer {
+	padding: 3em 1em;
+	border-top: 1px solid colors.$darker;
+	text-align: center;
+	
 	&--disable {
 		display: none;
 	}
